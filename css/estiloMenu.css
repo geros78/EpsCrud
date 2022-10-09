@@ -1,0 +1,31 @@
+.col-3 li{
+
+    list-style: none;
+    margin-top: 20px;
+}
+
+.texto{
+    padding: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(236, 236, 236);
+    background-color: rgb(44, 50, 58);
+    width: 900px;
+    height: 320px;
+    border-radius: 1cm;
+    margin-bottom: 50px;
+}
+
+.container_espacio{
+    padding: 30px;
+}
+
+.container_espacio p{
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

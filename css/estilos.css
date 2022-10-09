@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('https://www.stpetersacademy.com.pa/wp-content/uploads/2018/06/fondo-login-spa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-size: 40px;
+}
+
+.col-md-5{
+    margin-top: 8rem;
+}
+
+.col-md-7{
+    margin-top: 2rem;
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.1);
+}
