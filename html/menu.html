@@ -169,7 +169,7 @@
           <p>Nuestra Plataforma te ayudara en tu prosceso gracias a nuestros asistentes,
             ellos te acosensejan segun los problemas o dudas que presentes, analizamos tu situacion para dar la mejor.       
           </p>
-          <button class="btn btn-warning">Contacta con nosotros</button>
+          <button type="button" class="btn btn-warning" id="liveToastBtn">Contacta con nosotros</button>
         </div>
         </div>
     </div>
@@ -233,6 +233,21 @@
       
   </footer>
 
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+        <strong class="me-auto">Su solicitud ha sido registrada.</strong>
+        <small>few moments ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+        Pronto nos pondremos en contacto para dar solucion a su porblema
+        </div>
+    </div>
+    </div>
+
+</div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -242,6 +257,17 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if(toastTrigger){
+            toastTrigger.addEventListener('click', function() {
+                var toast = new bootstrap.Toast(toastLiveExample)
+                toast.show()
+            })
+        }
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
